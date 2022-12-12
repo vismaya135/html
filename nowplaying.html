@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowplaying</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        display: flex;
+        align-items: center;
+
+    }
+    .swiper{
+        width: 90%;
+        height: fit-content;
+
+    }
+    .swiper-slide img{
+        width: 90%;
+    }
+    .swiper .swiper-button-prev, .swiper-button-next{
+        color: #fff;
+    }
+    .swiper .swiper-pagination-bullet-active{
+        background: #fff;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">9
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/999/959/654/fiction-collage-hammer-poster-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/862/53/117/godzilla-artwork-skyline-japan-wallpaper-preview.jpg" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/776/18/529/star-wars-the-force-awakens-film-posters-movie-poster-collage-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src=" https://c4.wallpaperflare.com/wallpaper/867/386/329/comedy-dark-film-fright-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/465/489/247/the-film-art-poster-rocket-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/865/201/117/classic-film-movie-movies-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://p4.wallpaperbetter.com/wallpaper/109/118/566/dragon-ball-z-anime-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://www.thetelugufilmnagar.com/wp-content/uploads/2022/09/Kushi-Back-To-Back-Comedy-Scenes.webp" alt=""></div>
+
+
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+  
+  
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+    </script>
+
+
+</body>
+</html>
